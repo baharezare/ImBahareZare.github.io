@@ -1,0 +1,137 @@
+body {
+    background-color: #ECF2FF;
+    font-family: 'Nunito', sans-serif;
+
+}
+
+
+hr {
+
+    border: dotted #E3DFFD 6px;
+    border-bottom: none;
+    width: 4%;
+
+}
+
+h1 {
+    text-align: center;
+  font-family: 'Sacramento', cursive;
+  color: #03506F;
+  font-size: 5.625rem;
+
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    color: #03506F;
+}
+a{
+    color: #7F669D;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 20px;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: #03506F;
+  }
+.top_container {
+    width: 65%;
+    margin: 0 auto 10px auto;
+    height: 20%;
+    line-height: 2;
+
+}
+
+/* .blue_gear{
+    width:5%;
+    position:relative;
+    left:300px;
+    top:17px;
+
+} */
+.DS {
+    text-align: center;
+}
+
+.girl {
+    width: 40%;
+    float: left;
+}
+
+
+.table_education {
+    
+    margin: 10px 350px 10px 350px;
+    text-align: center;
+    line-height:2;
+    
+}
+.work_experience {
+    
+    text-align: center;
+    margin:10px 30px 10px 30px;
+    
+}
+.hobbies{text-align: center;
+    line-height:2;}
+
+.skills{text-align: center;
+    margin: 10px 350px 10px 350px;
+    text-align: center;
+    line-height:2;
+}
+.bottom-container {
+    background-color: #A68DAD;
+    padding: 50px 0 20px;
+    
+    
+  }
+  
+
+.contact-message {
+    text-align: center;
+    width: 60%;
+    margin: 10px auto 10px;
+}
+
+.copyright {
+    color: #03506F;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+
+.btn {
+    background: #7F669D;
+    background-image: -webkit-linear-gradient(top, #7F669D, #7F669D);
+    background-image: -moz-linear-gradient(top, #7F669D, #7F669D);
+    background-image: -ms-linear-gradient(top, #7F669D, #7F669D);
+    background-image: -o-linear-gradient(top, #7F669D, #7F669D);
+    background-image: linear-gradient(to bottom, #7F669D, #7F669D);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #E5D1FA;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    width:60%;
+    position:relative;
+    left:450px;
+    top:100px;
+}
+
+.btn:hover {
+    background: #FFF4D2;
+    background-image: -webkit-linear-gradient(top, #FFF4D2, #FFF4D2);
+    background-image: -moz-linear-gradient(top, #FFF4D2, #FFF4D2);
+    background-image: -ms-linear-gradient(top, #FFF4D2, #FFF4D2);
+    background-image: -o-linear-gradient(top, #FFF4D2, #FFF4D2);
+    background-image: linear-gradient(to bottom, #FFF4D2, #FFF4D2);
+    text-decoration: none;
+}
