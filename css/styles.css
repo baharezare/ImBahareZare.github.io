@@ -130,14 +130,14 @@ a{
 
 .projects {
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #ECF2FF;
     border-radius: 8px;
 }
 
 .project {
     margin-bottom: 20px;
     padding: 15px;
-    background-color: #ECF2FF;
+    background-color: #f4f4f4;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
