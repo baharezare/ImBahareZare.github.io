@@ -1,1 +1,95 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Wind Turbine Geospatial Visualization</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Project: Wind Turbine Geospatial Visualization</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Overview</h2>
+            <p>This project leverages the Bokeh library to create an interactive geospatial visualization of wind turbine locations. By integrating tile-based maps and converting geospatial data, the visualization provides insights into the geographical distribution of wind turbines.</p>
+        </section>
+
+        <section>
+            <h2>Tools and Libraries</h2>
+            <p>The visualization is built with the following tools:</p>
+            <ul>
+                <li><strong>Bokeh</strong>: For interactive plotting and visualization.</li>
+                <li><strong>Pandas</strong>: To handle and process the dataset.</li>
+                <li><strong>Pyproj</strong>: For transforming geospatial coordinates.</li>
+                <li><strong>Jupyter Notebook</strong>: For developing and displaying the analysis interactively.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Dataset Description</h2>
+            <p>The dataset contains geospatial coordinates of wind turbines:</p>
+            <ul>
+                <li><strong>Site.Longitude</strong>: Longitude of the wind turbine site.</li>
+                <li><strong>Site.Latitude</strong>: Latitude of the wind turbine site.</li>
+                <li><strong>Derived x and y coordinates:</strong> Coordinates converted to Web Mercator format for mapping.</li>
+            </ul>
+            <p>Below is an example of the data processed:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Site.Longitude</th>
+                        <th>Site.Latitude</th>
+                        <th>x</th>
+                        <th>y</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>-93.518082</td>
+                        <td>42.01363</td>
+                        <td>-10409672.1</td>
+                        <td>5147749.2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <h2>Visualization</h2>
+            <p>The interactive map displays the wind turbine locations with red markers. Users can zoom and pan to explore the map for detailed spatial analysis.</p>
+            <div>
+                <h3>Key Features:</h3>
+                <ul>
+                    <li>Tile provider: CartoDB Positron for an elegant basemap.</li>
+                    <li>Interactive tools: Pan, zoom, and reset functionality.</li>
+                    <li>Accurate geospatial transformation using EPSG:3857 projection.</li>
+                </ul>
+            </div>
+            <img src="images/wind_turbine_map.png" alt="Wind Turbine Geospatial Visualization" style="width:100%; max-width:800px;">
+        </section>
+
+        <section>
+            <h2>Methodology</h2>
+            <p>The following steps were performed to create the visualization:</p>
+            <ol>
+                <li>Imported necessary libraries: <code>Bokeh</code>, <code>Pandas</code>, and <code>Pyproj</code>.</li>
+                <li>Prepared the dataset by transforming latitude and longitude into Web Mercator coordinates using <code>pyproj.Transformer</code>.</li>
+                <li>Set up a Bokeh figure with <code>x_axis_type</code> and <code>y_axis_type</code> set to "mercator" for geographical mapping.</li>
+                <li>Added a tile provider (CartoDB Positron) for the base map layer.</li>
+                <li>Plotted wind turbine locations using <code>circle</code> markers and adjusted visual properties for clarity.</li>
+                <li>Rendered the plot using <code>show()</code>.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Insights</h2>
+            <p>The geospatial visualization provides actionable insights into the locations of wind turbines:</p>
+            <ul>
+                <li>Enables analysis of turbine distribution across geographical regions.</li>
+                <li>Supports identifying high-density clusters of wind turbines.</li>
+                <li>Facilitates decision-making for future site placements based on existing patterns.</li>
+            </ul>
+   
